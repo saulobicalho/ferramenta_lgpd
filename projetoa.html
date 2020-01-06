@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js" > </script>
+
+
+    <title>Facilita A</title>
+  </head>
+  <body>
+
+
+      <div id="main">
+
+        <p></p>
+        <h2>Projeto A</h2>
+
+
+        <!-- container para secoes video e descricao-->
+              <div class="container">
+                <div class="row">
+
+        <!-- secao video Institucional-->
+                  <section id="videos" class="col-sm-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/fuuudzh1qEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </section>
+
+        <!-- secao descricao-->
+                  <section id="contato" class="col-sm-6">
+                    <!-- fim secao contato-->
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="card-title" id="demo1">Facilitador A</h3>
+                        <script>
+                          exibeValor();
+                        </script>
+                        <p class="card-text">Ferramenta de ajuda para empresas que realizam tratamento de dados pessoais de risco para o cumprimento da LGPD</p>
+
+                      </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#janela-pgto">
+                      Ver se aplica-se ao meu caso
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="janela-pgto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Marque os tratamentos feitos pela empresa</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+
+                            <div class="radio"><ul class="unstyledList">
+                            <li><label>
+                              <input type="radio" name="tipo-pessoa"> Fazer ou analisar perfis
+                            </label></li>
+                            <li><label>
+                              <input type="radio" name="tipo-pessoa"> Publicidade
+                            </label></li>
+                            <li><label>
+                              <input type="radio" name="tipo-pessoa"> Comunicação Eletrônica
+                            </label></li>
+                            <li><label>
+                              <input type="radio" name="tipo-pessoa"> Partidos políticos
+                            </label></li>
+                            <li><label>
+                              <input type="radio" name="tipo-pessoa"> Controloe Sanitário
+                            </label></li>
+                            <li><label>
+                              <input type="radio" name="tipo-pessoa"> Nenhum
+                            </label></li>
+                            </ul>
+
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary"
+                            data-toggle="modal" data-target="#janela-ok"
+                            data-dismiss="modal" onclick="atualizaValor()">
+                            Confirmar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fim Modal -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="janela-ok" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Verificação concluída!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>A ferramenta é adequada para a sua empresa. Você poderá utilizá-la para controlar o gerenciamento dos dados com segurança.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"
+                            data-dismiss="modal"data-toggle="modal"
+                            data-target="#janela-contato">Continuar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fim Modal -->
+
+                  </section>
+<!--fim secao descricao-->
+
+                </div>
+
+                  </div>
+                </div>
+
+        <!-- fim container para secoes video e descricao-->
+        <!-- Modal -->
+        <div class="modal fade" id="janela-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mensagem
+                da nossa Equipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>No momento a ferramenta Facilitador A ainda está
+                em fase de implementação. Portanto neste MVP você ainda não poderá instalá-la para uso. <br><br>
+            Agradecemos a sua compreensão. Em breve teremos novidades em nosso site!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success"
+                data-dismiss="modal" onclick="location.href = 'index.html';">
+                Ok, entendi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Fim Modal -->
+
+
+<!---rodape------>
+    <footer>
+      <address>
+          <strong>People For Science</strong><br>
+          Universidade Federal de Minas Gerais, Liberdade<br>
+          Belo Horizonte,MG<br>
+          Tel: (31) 5551-4751 ou 5283-3888
+      </address>
+      <address>
+           Email: peopleforscience@gmail.com.br
+      </address>
+    </footer>
+
+
+
+  </body>
+</html>

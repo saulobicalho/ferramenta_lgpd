@@ -1,0 +1,302 @@
+/*estilo do secao sobre nos--------------------------------*/
+#avatar{
+  border-radius: 100px;
+  width: 100px;
+}
+
+#card-avatar{
+  border: none;
+  font: 20px Proximanova, sans-serif;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
+}
+
+.logo{
+  color:#FFF;
+  background-image: url(img/logo.png);
+  background-size: cover;
+  text-align: right;
+}
+
+.right{
+  position: relative; right 0px;
+  margin-left: 50%;
+}
+
+.carrossel{
+  color:#FFF;
+  background-image: url(img/logo.png);
+  background-size: cover;
+}
+
+/*fim estilo do secao sobre nos--------------------------------*/
+
+
+/*estilo do dahboard em meuprojeto.html--------------------------------*/
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar p{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+
+/* The sidebar links */
+.sidebar a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main{
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+#meuprojeto-navbar{
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding-left: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/*fim do estilo do dahboard em meuprojeto.html--------------------------------*/
+
+
+.comece{
+  background-color: #5E3DA0;
+  background-size: cover;
+  background-position:top center;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.login, .cadastro{
+  background-color: #FFF;
+  background-size: cover;
+  background-position:top center;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+#subtitulo{
+  font: 34px sans-serif;
+}
+
+#subsubtitulo{
+  font: 28px  sans-serif;
+}
+
+p{
+  text-align: justify;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*{
+  font:"Arial";
+}
+
+header{
+    background-image: url(img/bkg.jpg);
+    background-size: cover;
+    background-position:top center;
+    height: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.alternativeHeader{
+  background-color: #5E3DA0;
+  background-size: cover;
+  background-position:top center;
+  height: 30%;
+  position: relative;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+
+}
+
+.exploreHeader{
+  background-color: #5E3DA0;
+  background-size: cover;
+  background-position:top center;
+  height: 30%;
+  position: relative;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+
+.explore-select{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline;
+  width: 20%;
+  color: #FFF;
+}
+
+
+.peopleforscience-banner{
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20 px;
+    width: 80%;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+.comece-banner{
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20 px;
+    width: 80%;
+    border-radius: 8px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.login-banner, .cadastro-banner{
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20 px;
+    width: 80%;
+    border-radius: 8px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+/* estilo dos cartoes em Explore*/
+.card-info{
+  display: inline;
+  padding-right: 10%;
+}
+
+@media(min-width:992px) {
+    .peopleforscience-banner, .comece-banner, .login-banner,.cadastro-banner {
+    left: 0;
+    transform: translate(0, -80%);
+    width: 50%;
+    }
+    .peopleforscience-bannerWrapper, .comece-bannerWrapper,
+    .login-bannerWrapper, .cadastro-bannerWrapper{
+      position: relative;
+      height: 100%;
+    }
+}
+
+.facebook{
+  background-color: #4B6FB8;
+  width: 100%;
+  color: #FFF;
+}
+
+#secondary-text{
+  color: gray;
+}
+
+#espacado{
+  display: block;
+  padding: 5px;
+}
+
+.contato-select,
+.grupo-radio{
+    width: 50%;
+    display: inline-block;
+    vertical align: top;
+}
+
+.grupo radio .radio:first-child {
+    margin-top: 0;
+}
+
+.unstyledList{
+  list-style-type: none;
+}
+
+footer {
+    background-image: url(img/ft.jpg);
+    background-size: cover;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer address:last-child {
+ margin-bottom: 0;
+}

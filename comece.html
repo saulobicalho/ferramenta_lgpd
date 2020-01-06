@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue"></script>
+
+    <title>Comece</title>
+  </head>
+  <body>
+    <div class="comece projeto">
+      <div class="container comece-bannerWrapper">
+        <a class="navbar-brand" href="index.html">People For Science</a>
+        <h3>Primeiramente, vamos preparar um esboço</h3>
+        <p>Não se preocupe, será possível alterar as informações futuramente</p>
+        <div class="comece-banner">
+          <form>
+            <div class="form-group">
+              <p>Quero divulgar um projeto chamado</p>
+              <label for="projeto-name"></label>
+              <input class="form-control" id="projeto-name" type="text"
+              placeholder="Nome do projeto" v-on:keydown.enter="alterarTexto">
+            </div>
+
+              <p>na categoria</p>
+              <select class=" form-control">
+
+                <option disabled selected>Escolha uma categoria</option>
+                <option>Ciências Biológicas e da Saúde</option>
+                <option>Ciências Exatas e da Terra</option>
+                <option>Ciências Sociais</option>
+                <option>Ciências Sociais Aplicadas</option>
+                <option>Engenharias</option>
+                <option>Linguística, Letras e Artes</option>
+
+
+              </select>
+
+              <button type="button" class="btn btn-primary" onclick="location.href = 'meuprojeto.html';">Começar o esboço</button>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
